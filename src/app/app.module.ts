@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material/material.module';
 import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
 import { ClienteModule } from "./pages/cliente/cliente.module";
+import { ContaModule } from './pages/conta/conta.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -22,7 +23,8 @@ import { ClienteModule } from "./pages/cliente/cliente.module";
     MaterialModule,
     NgxMaskDirective,
     NgxMaskPipe,
-    ClienteModule
+    ClienteModule,
+    ContaModule
 ],
   providers: [],
   bootstrap: [AppComponent]
