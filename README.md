@@ -1,27 +1,57 @@
-# SistemaBancario
+# Sistema Bancário - Angular Bootcamp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Este projeto faz parte da pós-graduação em **Fullstack Web Development**, na disciplina **Angular Bootcamp**. Trata-se de um sistema bancário desenvolvido com Angular, permitindo o gerenciamento de clientes e contas bancárias. As funcionalidades incluem cadastro, listagem e edição de clientes, além de operações bancárias como depósito, saque e transferência entre contas.
 
-## Development server
+## Funcionalidades Principais
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Módulo Cliente
+- **Cadastrar Cliente**: Adicionar um novo cliente ao sistema.
+- **Listar Clientes**: Exibir todos os clientes cadastrados.
+- **Editar Cliente**: Alterar os dados de um cliente existente.
 
-## Code scaffolding
+### Módulo Conta
+- **Cadastrar Conta**: Criar uma nova conta bancária para um cliente.
+- **Depositar em Conta**: Adicionar saldo a uma conta existente.
+- **Sacar de Conta**: Realizar saques de uma conta bancária.
+- **Transferir Entre Contas**: Realizar transferências de saldo entre contas diferentes.
+- **Listar Contas**: Visualizar todas as contas cadastradas no sistema.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias Utilizadas
 
-## Build
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.0. As seguintes dependências foram utilizadas:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Dependências Principais
+- **Angular** (v16.1.0): Framework principal para desenvolvimento da aplicação.
+- **Angular Material** (v16.2.14): Componentes visuais baseados no Material Design.
+- **Bootstrap** (v5.3.3): Framework CSS para design responsivo.
+- **jQuery** (v3.3.1): Biblioteca JavaScript para manipulação do DOM.
+- **ngx-mask** (v18.0.0): Máscaras de entrada para campos de formulário.
+- **SweetAlert2** (v11.14.0): Alertas e diálogos personalizados.
+- **rxjs** (v7.8.0): Programação reativa com streams de dados.
+- **zone.js** (v0.13.0): Contexto de execução para detecção de mudanças no Angular.
 
-## Running unit tests
+## Rotas Principais
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+As rotas da aplicação estão organizadas da seguinte forma:
 
-## Running end-to-end tests
+### Módulo Cliente
+- **`/cliente/novo`**: Cadastrar um novo cliente.
+- **`/cliente/editar/:id`**: Editar um cliente existente.
+- **`/cliente`**: Listar todos os clientes.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Módulo Conta
+- **`/conta/novo`**: Cadastrar uma nova conta bancária.
+- **`/conta/editar/:id`**: Editar uma conta bancária existente.
+- **`/conta/deposito`**: Realizar um depósito em uma conta.
+- **`/conta/saque`**: Realizar um saque de uma conta.
+- **`/conta/transferencia`**: Realizar uma transferência entre contas.
+- **`/conta`**: Listar todas as contas.
 
-## Further help
+## Executando o Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Servidor de Desenvolvimento
+Para iniciar o servidor de desenvolvimento, execute o comando:
+```bash
+ng serve
+```
+A aplicação estará disponível em `http://localhost:4200/`.
